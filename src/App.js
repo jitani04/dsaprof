@@ -1,23 +1,33 @@
 import logo from './logo.svg';
 import './App.css';
+// import OpenAI from "openai";
+// const client = new OpenAI();
 
+// async function OpenaiApi(){
+//   const response = await client.responses.create({
+//     model: "gpt-4o",
+//     input: "Write a one-sentence bedtime story about a unicorn.",
+//   });
+
+//   return response.output_text;
+// }
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <main className="App-body">
+        <h1>Welcome to DSA Professor</h1>
+        <p>Get help with coding problems, algorithms, and data structures.</p>
+        <p>Click on a topic to get started!</p>
+        <button className="App-button"> Arrays </button>
+        <button className="App-button"> Strings </button>
+        <button className="App-button"> Linked Lists </button>
+        <button className="App-button"> Trees </button>
+        <button className="App-button"> Graphs </button>
+        <button className="App-button"> Stacks </button>
+        <button className="App-button"> Queues </button>
+        <button className="App-button"> Recursion </button>
+        <button className="App-button"> Dynamic Programming </button>
+      </main>
     </div>
   );
 }
